@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Figure"
+  short_description: "Create matching paper-ready PNG and TikZ PDF figures"
+  default_prompt: "Use $paper-figure to create a paper-ready figure with matching matplotlib PNG and LaTeX/TikZ PDF sources."

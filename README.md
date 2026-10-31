@@ -114,6 +114,14 @@ For example, you can perform an editable installation as follows:
 
 ## Example usage
 
+### Non-spatial ecological commons
+
+The [non-spatial commons experiment](examples/non_spatial_commons/README.md)
+implements continuous harvesting, metabolic energy reserves, an analytic online
+safety filter, and fixed-policy comparisons. It runs independently of Lab2D
+and exposes a multi-agent `dm_env` interface with unshielded PPO training and
+paired shielded/unshielded evaluation of frozen policies.
+
 ### Evaluation
 The [evaluation](https://github.com/google-deepmind/meltingpot/blob/main/meltingpot/utils/evaluation/evaluation.py) library can be used
 to evaluate [SavedModel](https://www.tensorflow.org/guide/saved_model)s

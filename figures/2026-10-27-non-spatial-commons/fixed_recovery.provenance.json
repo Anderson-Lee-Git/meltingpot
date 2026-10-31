@@ -1,0 +1,9 @@
+{
+  "source_sha256": {
+    "examples/results/non_spatial_commons/recovery/summary.json": "2f9e57ee49c98dbb79cc812877b04e4a705483ca90387a047bc61cbd4e6b4f63",
+    "examples/results/non_spatial_commons/recovery/trajectories.csv": "b7cdc57e0cf26dade8570723a3b204ccbb4b450829baef9831c584757c962235"
+  },
+  "title": "Fixed Policies: Depleted Start",
+  "subtitle": "Single Episode (Seed 0); First 100 Rounds",
+  "notes": "Dotted Lines: MSY Stock / MSY Harvest and Zero Energy; \u00d7 Marks Failure"
+}

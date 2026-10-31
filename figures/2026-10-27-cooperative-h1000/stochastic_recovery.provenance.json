@@ -1,0 +1,20 @@
+{
+  "source_sha256": {
+    "examples/results/non_spatial_commons/ppo_cooperative_h1000/showcase_stochastic_recovery/summary.json": "f33f66e08dbcac017deea32b61fbd62bf2e90041a46a7ea38f08c75a94ab9e3c",
+    "examples/results/non_spatial_commons/ppo_cooperative_h1000/showcase_stochastic_recovery/trajectories.csv": "b6fca40dec45f76210ec1ed87d71b1211a849bffdce9aa675c2fe487d7592701"
+  },
+  "title": "Cooperative PPO: Depleted Start",
+  "subtitle": "Trained With 1,000-Round Episodes; Stochastic Actions; One Episode per Seed",
+  "notes": "Dotted Lines: MSY Stock / MSY Harvest and Zero Energy; \u00d7 Marks Failure",
+  "original_evaluation_sha256": {
+    "examples/results/non_spatial_commons/ppo_cooperative_h1000/cooperative/seed_0/evaluation/summary.json": "95047cb72fcfed59b82c1931cb7704601919634d24c84dd957ecd7757bb25bfd",
+    "examples/results/non_spatial_commons/ppo_cooperative_h1000/cooperative/seed_0/evaluation/trajectories.csv": "23192744371e781ecb41ed259fea3d63ede4bd0edff3102b5f44bb3ff5a3f5c8",
+    "examples/results/non_spatial_commons/ppo_cooperative_h1000/cooperative/seed_1/evaluation/summary.json": "72abd98c4e2b989c3fe734eb8be75e5f479c98016e048e8a39a1db19cedd40a9",
+    "examples/results/non_spatial_commons/ppo_cooperative_h1000/cooperative/seed_1/evaluation/trajectories.csv": "43da13b90ee75889ceef2fc97383594eff0c26e3eb6e4362c3739c9a6209b341",
+    "examples/results/non_spatial_commons/ppo_cooperative_h1000/cooperative/seed_2/evaluation/summary.json": "086f112fa32b62c01ff935092ce5dddf7ebb44d68e44b88c449dab0edf580967",
+    "examples/results/non_spatial_commons/ppo_cooperative_h1000/cooperative/seed_2/evaluation/trajectories.csv": "95a9257c5415edec1d6bf2e5744680ccaf4e575eb313d014b370a749a6572eb8"
+  },
+  "training_episode_length": 1000,
+  "training_transitions_per_seed": 200704,
+  "cumulative_return_definition": "Undiscounted sum of executed harvest across all four agents; zero future reward after termination."
+}

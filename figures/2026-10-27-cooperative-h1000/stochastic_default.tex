@@ -1,0 +1,66 @@
+\begin{tikzpicture}
+\begin{groupplot}[group style={group size=3 by 4,horizontal sep=1.35cm,vertical sep=0.65cm},width=6.5cm,height=4.25cm,scale only axis,axis x line*=bottom,axis y line*=left,axis line style={gray!60},grid=major,grid style={gray!18},tick align=outside,tick label style={font=\normalsize},label style={font=\large},title style={font=\large},scaled ticks=false,/pgf/number format/1000 sep={},unbounded coords=jump]
+\nextgroupplot[xmin=0,xmax=1000,ymin=-4.722801419966924,ymax=83.43615841941566,title={Training Seed 0},xticklabels={},ylabel={Resource Stock}]
+\addplot[gray,densely dotted,thick] coordinates {(0,62.5) (1000,62.5)};
+\addplot[c0,line width=1pt,no marks] table[x=x,y=y] {data/stochastic_default_0_0_1.dat};
+\addplot[c1,dashed,line width=1pt,no marks] table[x=x,y=y] {data/stochastic_default_0_0_0.dat};
+\addplot[c1,only marks,mark=x,mark size=3pt,thick] coordinates {(635,0.0)};
+\nextgroupplot[xmin=0,xmax=1000,ymin=-4.722801419966924,ymax=83.43615841941566,title={Training Seed 1},xticklabels={}]
+\addplot[gray,densely dotted,thick] coordinates {(0,62.5) (1000,62.5)};
+\addplot[c0,line width=1pt,no marks] table[x=x,y=y] {data/stochastic_default_0_1_1.dat};
+\addplot[c1,dashed,line width=1pt,no marks] table[x=x,y=y] {data/stochastic_default_0_1_0.dat};
+\addplot[c1,only marks,mark=x,mark size=3pt,thick] coordinates {(309,0.0)};
+\nextgroupplot[xmin=0,xmax=1000,ymin=-4.722801419966924,ymax=83.43615841941566,title={Training Seed 2},xticklabels={}]
+\addplot[gray,densely dotted,thick] coordinates {(0,62.5) (1000,62.5)};
+\addplot[c0,line width=1pt,no marks] table[x=x,y=y] {data/stochastic_default_0_2_1.dat};
+\addplot[c1,dashed,line width=1pt,no marks] table[x=x,y=y] {data/stochastic_default_0_2_0.dat};
+\addplot[c1,only marks,mark=x,mark size=3pt,thick] coordinates {(637,0.0)};
+\nextgroupplot[xmin=0,xmax=1000,ymin=-1.66,ymax=10.66,xticklabels={},ylabel={Minimum Agent Energy}]
+\addplot[gray,densely dotted,thick] coordinates {(0,0) (1000,0)};
+\addplot[c0,line width=1pt,no marks] table[x=x,y=y] {data/stochastic_default_1_0_1.dat};
+\addplot[c1,dashed,line width=1pt,no marks] table[x=x,y=y] {data/stochastic_default_1_0_0.dat};
+\addplot[c1,only marks,mark=x,mark size=3pt,thick] coordinates {(635,-1.0)};
+\nextgroupplot[xmin=0,xmax=1000,ymin=-1.66,ymax=10.66,xticklabels={}]
+\addplot[gray,densely dotted,thick] coordinates {(0,0) (1000,0)};
+\addplot[c0,line width=1pt,no marks] table[x=x,y=y] {data/stochastic_default_1_1_1.dat};
+\addplot[c1,dashed,line width=1pt,no marks] table[x=x,y=y] {data/stochastic_default_1_1_0.dat};
+\addplot[c1,only marks,mark=x,mark size=3pt,thick] coordinates {(309,-1.0)};
+\nextgroupplot[xmin=0,xmax=1000,ymin=-1.66,ymax=10.66,xticklabels={}]
+\addplot[gray,densely dotted,thick] coordinates {(0,0) (1000,0)};
+\addplot[c0,line width=1pt,no marks] table[x=x,y=y] {data/stochastic_default_1_2_1.dat};
+\addplot[c1,dashed,line width=1pt,no marks] table[x=x,y=y] {data/stochastic_default_1_2_0.dat};
+\addplot[c1,only marks,mark=x,mark size=3pt,thick] coordinates {(637,-0.7634863929400613)};
+\nextgroupplot[xmin=0,xmax=1000,ymin=-1.2214961957931518,ymax=21.579766125679015,xticklabels={},ylabel={Aggregate Harvest}]
+\addplot[gray,densely dotted,thick] coordinates {(0,12.5) (1000,12.5)};
+\addplot[c0,line width=1pt,no marks] table[x=x,y=y] {data/stochastic_default_2_0_1.dat};
+\addplot[c1,dashed,line width=1pt,no marks] table[x=x,y=y] {data/stochastic_default_2_0_0.dat};
+\addplot[c1,only marks,mark=x,mark size=3pt,thick] coordinates {(635,0.0)};
+\nextgroupplot[xmin=0,xmax=1000,ymin=-1.2214961957931518,ymax=21.579766125679015,xticklabels={}]
+\addplot[gray,densely dotted,thick] coordinates {(0,12.5) (1000,12.5)};
+\addplot[c0,line width=1pt,no marks] table[x=x,y=y] {data/stochastic_default_2_1_1.dat};
+\addplot[c1,dashed,line width=1pt,no marks] table[x=x,y=y] {data/stochastic_default_2_1_0.dat};
+\addplot[c1,only marks,mark=x,mark size=3pt,thick] coordinates {(309,0.0)};
+\nextgroupplot[xmin=0,xmax=1000,ymin=-1.2214961957931518,ymax=21.579766125679015,xticklabels={}]
+\addplot[gray,densely dotted,thick] coordinates {(0,12.5) (1000,12.5)};
+\addplot[c0,line width=1pt,no marks] table[x=x,y=y] {data/stochastic_default_2_2_1.dat};
+\addplot[c1,dashed,line width=1pt,no marks] table[x=x,y=y] {data/stochastic_default_2_2_0.dat};
+\addplot[c1,only marks,mark=x,mark size=3pt,thick] coordinates {(637,0.0)};
+\nextgroupplot[xmin=0,xmax=1000,ymin=-730.5890814911202,ymax=12907.07377300979,xlabel={Round},ylabel={Cumulative Return}]
+\addplot[c0,line width=1pt,no marks] table[x=x,y=y] {data/stochastic_default_3_0_1.dat};
+\addplot[c1,dashed,line width=1pt,no marks] table[x=x,y=y] {data/stochastic_default_3_0_0.dat};
+\addplot[c1,only marks,mark=x,mark size=3pt,thick] coordinates {(635,7630.372828420685)};
+\nextgroupplot[xmin=0,xmax=1000,ymin=-730.5890814911202,ymax=12907.07377300979,xlabel={Round}]
+\addplot[c0,line width=1pt,no marks] table[x=x,y=y] {data/stochastic_default_3_1_1.dat};
+\addplot[c1,dashed,line width=1pt,no marks] table[x=x,y=y] {data/stochastic_default_3_1_0.dat};
+\addplot[c1,only marks,mark=x,mark size=3pt,thick] coordinates {(309,3675.362552738543)};
+\nextgroupplot[xmin=0,xmax=1000,ymin=-730.5890814911202,ymax=12907.07377300979,xlabel={Round}]
+\addplot[c0,line width=1pt,no marks] table[x=x,y=y] {data/stochastic_default_3_2_1.dat};
+\addplot[c1,dashed,line width=1pt,no marks] table[x=x,y=y] {data/stochastic_default_3_2_0.dat};
+\addplot[c1,only marks,mark=x,mark size=3pt,thick] coordinates {(637,7647.562791793963)};
+\end{groupplot}
+\node[font=\LARGE\bfseries,anchor=south] at ($(group c2r1.north)+(0,2.5cm)$) {Cooperative PPO: Default Start};
+\node[font=\large,anchor=south] at ($(group c2r1.north)+(0,1.9cm)$) {Trained With 1,000-Round Episodes; Stochastic Actions; One Episode per Seed};
+\draw[c1,dashed,line width=1pt] ($(group c2r1.north)+(-3.2cm,1.4cm)$) -- ++(.65cm,0) node[right,black,opacity=1,font=\large] {Unshielded};
+\draw[c0,solid,line width=1pt] ($(group c2r1.north)+(0.8999999999999995cm,1.4cm)$) -- ++(.65cm,0) node[right,black,opacity=1,font=\large] {Shielded};
+\node[font=\normalsize,anchor=north] at ($(group c2r4.south)+(0,-1.15cm)$) {Dotted Lines: MSY Stock / MSY Harvest and Zero Energy; $\times$ Marks Failure};
+\end{tikzpicture}

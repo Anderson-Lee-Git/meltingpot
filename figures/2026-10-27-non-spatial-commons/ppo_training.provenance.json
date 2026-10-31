@@ -1,0 +1,16 @@
+{
+  "source_sha256": {
+    "examples/results/non_spatial_commons/ppo/individual_maintenance/seed_0/training.csv": "db94111b8e8d742858f79fec455dfd6132a47d827d242730c54c12a36d01b6f2",
+    "examples/results/non_spatial_commons/ppo/individual_maintenance/seed_1/training.csv": "a7c7e61317c3a7d69de97488214b8f098c22ce14e6355498e01f54cf85cd48a1",
+    "examples/results/non_spatial_commons/ppo/individual_maintenance/seed_2/training.csv": "666fba69580626b5f4313068489ac6aa34f1885fbaf625fc16d5720a5f850bc8",
+    "examples/results/non_spatial_commons/ppo/individual_msy/seed_0/training.csv": "a4af5051bd1dce3f48db3d7602b0c0d0d5541de0074982a4ca61528c2fcc82d2",
+    "examples/results/non_spatial_commons/ppo/individual_msy/seed_1/training.csv": "bad69f1fc1db36d1aff17c3610122df1d373bcbbc7c08fe8c3c2d90f6776a125",
+    "examples/results/non_spatial_commons/ppo/individual_msy/seed_2/training.csv": "cf3a52d2bd11c878010ebbbc90c938479c2389f7c00e1de1b5ada2bf0ef70168",
+    "examples/results/non_spatial_commons/ppo/cooperative/seed_0/training.csv": "cd0a02d31ca8cbaf0589461ca8b3a67e16d29803f1bbb3ceb0882d7f6151c903",
+    "examples/results/non_spatial_commons/ppo/cooperative/seed_1/training.csv": "9c76f68389a44cda2eeabdbb2bd2c676dbcf8be8c1e9c78a3db532eed4e80c6e",
+    "examples/results/non_spatial_commons/ppo/cooperative/seed_2/training.csv": "1a9a929c895baa6dff1055aa74e849a934d7a716a3761c20e6725cd78bef975a"
+  },
+  "title": "PPO Training Without Shielding",
+  "subtitle": "Mean and Min\u2013Max Range Across Three Training Seeds",
+  "notes": "Recent 100 Completed Episodes; Return: Agent 0 (Individual), Total Harvest (Cooperative)"
+}

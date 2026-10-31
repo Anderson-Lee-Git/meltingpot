@@ -1,0 +1,36 @@
+% Example paper figure (LaTeX/TikZ -> PDF source).
+% A SINGLE tikzpicture, nothing else. The preamble (font, pgfplots,
+% colors c0..c5) is supplied by scaffold/main.tex via build_pdf.sh.
+%
+% Grouped bars use NUMERIC x positions (1, 2) with explicit xmin/xmax
+% rather than `symbolic x coords` + `enlarge x limits`: the symbolic
+% path silently ignores enlargement here and crowds the first group
+% against the y-axis. Numeric + xmin/xmax gives deterministic margins.
+\begin{tikzpicture}
+  \begin{axis}[
+      width=9cm, height=6cm,
+      ybar=2pt,
+      bar width=12pt,
+      xmin=0.4, xmax=2.6,
+      ymin=0, ymax=90,
+      ylabel={Accuracy (\%)},
+      title={Method Comparison Across Reasoning Benchmarks},
+      xtick={1,2},
+      xticklabels={GSM8K, MATH},
+      ytick={0,20,40,60,80},
+      ymajorgrids, grid style={gray!30},
+      axis lines*=left,
+      tick align=outside,
+      legend style={
+        draw=none, fill=none, at={(0.97,0.97)}, anchor=north east},
+      legend cell align=left,
+      nodes near coords, nodes near coords style={font=\footnotesize},
+      every node near coord/.append style={/pgf/number format/fixed,
+        /pgf/number format/precision=1},
+    ]
+    \addplot[fill=c0, draw=white] coordinates {(1,62.1) (2,34.5)};
+    \addplot[fill=c1, draw=white] coordinates {(1,71.8) (2,41.2)};
+    \addplot[fill=c2, draw=white] coordinates {(1,78.3) (2,48.9)};
+    \legend{Baseline, Ours (small), Ours (large)}
+  \end{axis}
+\end{tikzpicture}

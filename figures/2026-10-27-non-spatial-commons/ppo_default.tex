@@ -1,0 +1,45 @@
+\begin{tikzpicture}
+\begin{groupplot}[group style={group size=3 by 3,horizontal sep=1.35cm,vertical sep=0.65cm},width=6.5cm,height=4.25cm,scale only axis,axis x line*=bottom,axis y line*=left,axis line style={gray!60},grid=major,grid style={gray!18},tick align=outside,tick label style={font=\normalsize},label style={font=\large},title style={font=\large},scaled ticks=false,/pgf/number format/1000 sep={},unbounded coords=jump]
+\nextgroupplot[xmin=0,xmax=1000,ymin=61.91898719335917,ymax=72.764559583988,title={Individual: Maintenance Partners},xticklabels={},ylabel={Resource Stock}]
+\addplot[gray,densely dotted,thick] coordinates {(0,62.5) (1000,62.5)};
+\addplot[c0,line width=1pt,no marks] table[x=x,y=y] {data/ppo_default_0_0_1.dat};
+\addplot[c1,dashed,line width=1pt,no marks] table[x=x,y=y] {data/ppo_default_0_0_0.dat};
+\nextgroupplot[xmin=0,xmax=1000,ymin=61.91898719335917,ymax=72.764559583988,title={Individual: MSY Partners},xticklabels={}]
+\addplot[gray,densely dotted,thick] coordinates {(0,62.5) (1000,62.5)};
+\addplot[c0,line width=1pt,no marks] table[x=x,y=y] {data/ppo_default_0_1_1.dat};
+\addplot[c1,dashed,line width=1pt,no marks] table[x=x,y=y] {data/ppo_default_0_1_0.dat};
+\nextgroupplot[xmin=0,xmax=1000,ymin=61.91898719335917,ymax=72.764559583988,title={Cooperative Joint Policy},xticklabels={}]
+\addplot[gray,densely dotted,thick] coordinates {(0,62.5) (1000,62.5)};
+\addplot[c0,line width=1pt,no marks] table[x=x,y=y] {data/ppo_default_0_2_1.dat};
+\addplot[c1,dashed,line width=1pt,no marks] table[x=x,y=y] {data/ppo_default_0_2_0.dat};
+\nextgroupplot[xmin=0,xmax=1000,ymin=-0.6,ymax=10.6,xticklabels={},ylabel={Minimum Agent Energy}]
+\addplot[gray,densely dotted,thick] coordinates {(0,0) (1000,0)};
+\addplot[c0,line width=1pt,no marks] table[x=x,y=y] {data/ppo_default_1_0_1.dat};
+\addplot[c1,dashed,line width=1pt,no marks] table[x=x,y=y] {data/ppo_default_1_0_0.dat};
+\nextgroupplot[xmin=0,xmax=1000,ymin=-0.6,ymax=10.6,xticklabels={}]
+\addplot[gray,densely dotted,thick] coordinates {(0,0) (1000,0)};
+\addplot[c0,line width=1pt,no marks] table[x=x,y=y] {data/ppo_default_1_1_1.dat};
+\addplot[c1,dashed,line width=1pt,no marks] table[x=x,y=y] {data/ppo_default_1_1_0.dat};
+\nextgroupplot[xmin=0,xmax=1000,ymin=-0.6,ymax=10.6,xticklabels={}]
+\addplot[gray,densely dotted,thick] coordinates {(0,0) (1000,0)};
+\addplot[c0,line width=1pt,no marks] table[x=x,y=y] {data/ppo_default_1_2_1.dat};
+\addplot[c1,dashed,line width=1pt,no marks] table[x=x,y=y] {data/ppo_default_1_2_0.dat};
+\nextgroupplot[xmin=0,xmax=1000,ymin=8.84936809539795,ymax=13.0,xlabel={Round},ylabel={Aggregate Harvest}]
+\addplot[gray,densely dotted,thick] coordinates {(0,12.5) (1000,12.5)};
+\addplot[c0,line width=1pt,no marks] table[x=x,y=y] {data/ppo_default_2_0_1.dat};
+\addplot[c1,dashed,line width=1pt,no marks] table[x=x,y=y] {data/ppo_default_2_0_0.dat};
+\nextgroupplot[xmin=0,xmax=1000,ymin=8.84936809539795,ymax=13.0,xlabel={Round}]
+\addplot[gray,densely dotted,thick] coordinates {(0,12.5) (1000,12.5)};
+\addplot[c0,line width=1pt,no marks] table[x=x,y=y] {data/ppo_default_2_1_1.dat};
+\addplot[c1,dashed,line width=1pt,no marks] table[x=x,y=y] {data/ppo_default_2_1_0.dat};
+\nextgroupplot[xmin=0,xmax=1000,ymin=8.84936809539795,ymax=13.0,xlabel={Round}]
+\addplot[gray,densely dotted,thick] coordinates {(0,12.5) (1000,12.5)};
+\addplot[c0,line width=1pt,no marks] table[x=x,y=y] {data/ppo_default_2_2_1.dat};
+\addplot[c1,dashed,line width=1pt,no marks] table[x=x,y=y] {data/ppo_default_2_2_0.dat};
+\end{groupplot}
+\node[font=\LARGE\bfseries,anchor=south] at ($(group c2r1.north)+(0,2.5cm)$) {Frozen PPO Policies: Default Start};
+\node[font=\large,anchor=south] at ($(group c2r1.north)+(0,1.9cm)$) {Single Episode per Policy; Training Seed 0; Deterministic Actions};
+\draw[c1,dashed,line width=1pt] ($(group c2r1.north)+(-3.2cm,1.4cm)$) -- ++(.65cm,0) node[right,black,opacity=1,font=\large] {Unshielded};
+\draw[c0,solid,line width=1pt] ($(group c2r1.north)+(0.8999999999999995cm,1.4cm)$) -- ++(.65cm,0) node[right,black,opacity=1,font=\large] {Shielded};
+\node[font=\normalsize,anchor=north] at ($(group c2r3.south)+(0,-1.15cm)$) {Dotted Lines: MSY Stock / MSY Harvest and Zero Energy; $\times$ Marks Failure};
+\end{tikzpicture}

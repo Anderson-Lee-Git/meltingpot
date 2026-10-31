@@ -1,0 +1,38 @@
+% Shared LaTeX scaffolding for paper figures. DO NOT edit per-figure.
+% Compiles a single tikzpicture (passed via \figfile) into a tightly
+% cropped, paper-ready PDF. Drive it through build_pdf.sh, which sets
+% \figfile and TEXINPUTS for you.
+%
+%   pdflatex "\def\figfile{myfigure.tex}\input{main.tex}"
+%
+\documentclass[tikz,border=2pt]{standalone}
+
+% --- Font: Carlito (metric-compatible Calibri clone) as the default ---
+\usepackage{carlito}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+
+% --- Math that matches the sans text ---
+\usepackage{amsmath}
+\usepackage{sansmath}
+\sansmath
+
+% --- TikZ / pgfplots with the libraries figures commonly need ---
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{calc,positioning,arrows.meta,patterns,fit,backgrounds}
+\usepgfplotslibrary{groupplots,fillbetween}
+
+% A consistent, color-blind-safe palette available to every figure as
+% c0..c5 (Okabe-Ito). Use these instead of raw red/green/blue.
+\definecolor{c0}{HTML}{0072B2} % blue
+\definecolor{c1}{HTML}{E69F00} % orange
+\definecolor{c2}{HTML}{009E73} % green
+\definecolor{c3}{HTML}{D55E00} % vermillion
+\definecolor{c4}{HTML}{CC79A7} % purple
+\definecolor{c5}{HTML}{56B4E9} % sky blue
+
+\begin{document}
+\input{\figfile}
+\end{document}

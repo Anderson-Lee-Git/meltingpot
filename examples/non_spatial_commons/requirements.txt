@@ -1,0 +1,3 @@
+# This experiment deliberately avoids the full Lab2D/TensorFlow dependency stack.
+numpy>=1.24
+dm-env>=1.6

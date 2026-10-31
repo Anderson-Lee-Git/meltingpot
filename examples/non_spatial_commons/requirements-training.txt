@@ -1,0 +1,3 @@
+-r requirements.txt
+# Match the CPU backend validated on this Mac; GPU acceleration is optional.
+torch==2.9.1

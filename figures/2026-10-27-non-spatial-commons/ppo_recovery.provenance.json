@@ -1,0 +1,9 @@
+{
+  "source_sha256": {
+    "examples/results/non_spatial_commons/ppo/showcase_recovery/summary.json": "6f9f2907e6103098ea9156cc2a9d5618b31fdba97d702d5a1c8b49dd4733d5cd",
+    "examples/results/non_spatial_commons/ppo/showcase_recovery/trajectories.csv": "befb23b7dba63ee871572ec969e39466d24d4da81e160cf246b399af74fc12f7"
+  },
+  "title": "Frozen PPO Policies: Depleted Start",
+  "subtitle": "Single Episode per Policy; Training Seed 0; Deterministic Actions",
+  "notes": "Dotted Lines: MSY Stock / MSY Harvest and Zero Energy; \u00d7 Marks Failure"
+}
